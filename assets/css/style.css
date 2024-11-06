@@ -1,0 +1,513 @@
+@font-face {
+    font-family: felixTitling;
+    src: url('../Fonts/FELIXTI.TTF');
+}
+@font-face {
+    font-family: latoRegular;
+    src: url('../Fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: latoMed;
+    src: url('../Fonts/Lato-Medium.ttf');
+}
+@font-face {
+    font-family: latoMedium;
+    src: url('../Fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: latoBold;
+    src: url('../Fonts/Lato-Bold.ttf');
+}
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #fffef2
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: felixTitling;
+}
+h1,h2,h3,h4,a,button{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #ffff;
+}
+h2{
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    margin-bottom: 37px;
+    color: #fff;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #636363;
+    font-family: latoRegular;
+}
+
+button{
+    color: #fff;
+    background: #243230;
+    border-radius: 5px;
+    padding: 16px 28px;
+    font-size: 16px;
+    font-family: latoMedium;
+    border: none;  
+}
+
+.grey-border-btn:hover{
+    background: #fff !important;
+    transition: 2s ease;
+    color: #243230 !important;
+}
+
+/************     Header     ************/
+header{
+    padding-top: 68px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding-top: 68px;
+    background: none;
+    left: 0;
+    top:0;
+    text-align: center;
+}
+header .logo{
+    font-size: 72px;
+    margin-bottom: 70px;
+    color: #fff;
+    font-family: latoBold;
+    display: block;
+    text-align: center;
+
+}
+header .navbar{
+    background-color: transparent !important;
+}
+header .navbar.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 18px;
+    margin: 0 30px ;
+    font-family: latoMedium;
+    padding-bottom: 25px;
+    border-bottom: 2px solid transparent;
+}
+header .navbar.navbar-light .navbar-nav .nav-link:hover,header .navbar.navbar-light .navbar-nav .active{
+    border-bottom: 2px solid #0EE3C4;
+}
+header .navbar.navbar-light .navbar-nav{
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #FFFEF280;
+}
+
+
+
+/************     Banner      ************/
+.banner h1{
+    width : 670px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+.banner .banner-carousel{
+    position: relative;
+}
+
+.banner .banner-carousel .carousel-item button{
+    color: #fff;
+    background: #243230;
+    border-radius: 5px;
+    padding: 16px 28px;
+    font-size: 16px;
+    
+}
+.banner-carousel .carousel-item,.banner-carousel figure{
+    position: relative;
+}
+.banner-carousel figure::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.5);
+}
+.banner-carousel .carousel-caption{
+    text-align: center;
+    bottom: 10.35rem;
+}
+.banner .banner-carousel .carousel-item button.right-corer-btn{
+    padding: 28px 40px;
+    position: absolute;
+    border-radius: 1px;
+    right: -103px;
+    top: 50%;
+    transform: translateY(-50%);
+    rotate: -90deg;
+    border: 1px solid #FFFEF2;
+}
+.banner .banner-carousel .carousel-indicators{
+    padding-bottom: 60px;
+}
+.banner .banner-carousel .carousel-indicators button{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    margin-right: 12px;
+
+}
+.banner .banner-carousel .carousel-indicators button.active{
+    background-color: #fff;
+}
+
+
+.about-us{
+    padding: 129px 0 108px 0;
+}
+.about-us h2{
+    color: inherit;
+}
+.about-us p{
+    width: 537px;
+}
+.about-us button{
+    margin-top: 50px;
+}
+.about-us .about-image-wrapper{
+    position: relative;
+    padding-top: 300px;
+}
+.about-us .about-image-wrapper figure{
+    width: 101%;
+    position: relative;
+    z-index: 1;
+}
+.about-us .about-image-wrapper figure:nth-child(1){
+    left: 288px;
+    bottom: 169px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+/*****************    Promotions ***************/
+.promotions{
+    background-color: #243230;
+    padding: 74px 0;
+    text-align: center;
+}
+.promotions span{
+    font-size: 14px ;
+    line-height: 16px;
+    color: #fff;
+    display: block;
+    font-family: felixTitling;
+    padding-bottom: 22px;
+}
+.promotions h2{
+    margin-bottom: 67px;
+    color: #F0E5D6;
+    ;
+}
+.promotions .carousel-wrapper{
+    position: relative;
+}
+.promotions .promotion-carousel .owl-item{
+    position: relative;
+    margin-bottom: 80px;
+    transition: 0.5s ease;
+}
+.promotions .promotion-carousel .owl-item .content-area{
+    background: #fff;
+    padding: 35px;
+    position: absolute;
+    width: 348px;
+    bottom: -74px;
+    left: 24px;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+.promotions .promotion-carousel .owl-item .content-area .hover-area{
+    display: none;
+    transition: 0.5s ease;
+}
+.promotions .promotion-carousel .owl-item .content-area:hover .hover-area{
+    display: block;
+    transition: 0.5s ease;
+    
+}
+.promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #243230;
+    margin-bottom: 28px;
+}
+.promotions .promotion-carousel .owl-item .content-area p{
+    color: #636363;
+}
+.promotions .promotion-carousel .owl-item .content-area a{
+    padding: 14px 27px;
+    text-align: center;
+    color: #fff;
+    background: #243230;
+    border-radius: 5px;
+
+    display: inline-block;
+    margin-top: 48px;
+}
+.promotions .promotion-carousel .owl-nav{
+    opacity: 0;
+}
+.promotions .custom-nav button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;     
+    color: inherit;      
+    cursor: pointer;    
+    outline: none;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%);
+}
+.promotions .custom-nav button#prev{
+    left: -152px;
+    rotate: -180deg;
+}
+.promotions .custom-nav button#next{
+    right: -152px;
+}
+
+
+/*******************     Events   *****************/
+.events{
+    padding: 70px;
+}
+.events h2, .gallery h2{
+    color: inherit;
+    text-align: center;
+}
+.events .event-cards{
+    padding-bottom: 70px;
+    
+
+}
+.events .event-cards .card{
+    border-radius: 5px;
+    box-shadow: 3px 4px 30px 0px #00000033;
+}
+.events .event-cards .card-body,.events .event-cards .card-footer{
+    padding: 24px 30px;
+}
+.events .event-cards .card-body span{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.events .event-cards .card-body h4{
+    margin-bottom: 14px;
+}
+.events .event-cards .card-body p{
+    margin-bottom: .8rem;
+}
+.events .event-cards .card-footer{
+    background-color: #243230;
+    position: relative;
+    
+}
+.events .event-cards .card-footer a{
+    color: #fff;
+    font-size: 14PX;
+    line-height: 25px;
+    font-family: latoMedium;
+    display: inline-block;
+}
+.events .event-cards .card-footer span{
+    width: 200px;
+    display: inline-block;
+}
+.events .event-cards .card-footer IMG{
+    WIDTH: 50PX;
+    position: absolute;
+    right: 10px;
+}
+
+.events button{
+    margin: 0 auto;
+    width: 180px;
+    display: block;
+}
+
+/************       gallery **************/
+.gallery{
+    padding: 75px 0;
+    background-color: #243230 ;
+    color:  #fff;
+}
+.gallery img {
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.gallery .nav-tabs{
+    border-bottom: none;
+}
+.gallery .nav-tabs li{
+    padding: 0 20px;
+    font-family: latoMedium;
+}
+.gallery .nav-tabs li.nav-link {
+    padding-bottom: 10px;
+     
+}
+.gallery .nav-tabs li .nav-link{
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+}
+.gallery .nav-tabs li .nav-link:hover,.gallery .nav-tabs li .nav-link.active{
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0EE3C4;
+    background-color: none;
+    border-radius: 0;
+}
+.gallery-items .col-md-3{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.footer{
+    
+    padding-top: 72px;
+    color:#243230 ;
+}
+.footer .footer-logo{
+    font-size: 72px;
+    margin-bottom: 30px;
+    display: inline-block;
+    color:#243230 ;
+    font-family: latoRegular;
+}
+.footer p{
+    width: 570px;
+    margin-bottom: 60px;
+}
+.footer button{
+    padding: 23px 61px;
+}
+.footer .location-sec{
+    padding: 33px 0;
+}
+.footer .locxation-sec h3{
+    font-size: 20px;
+    font-family: latoMed;
+    padding-bottom: 25px;
+}
+.footer .location-sec span{
+    display: block;
+}
+.footer h2{
+    color:  #243230 ;
+}
+.footer form{
+    position: relative;
+}
+.footer form input{
+    background: #F2F1E3;
+    font-size: 16px;
+    padding: 18px 25px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+.footer form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 19PX 61PX;
+}
+.footer .social-media-list{
+    display:  flex;
+    padding: 90px 35px;
+}
+.footer .social-media-list li{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #243230;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-footer{
+    border-top: 0.5px solid #B6B6B6;
+    padding: 38px 0;
+    font-family: latoMedium;
+}
+.sub-footer .footer-menu{
+    display: flex;
+}
+.sub-footer .footer-menu a{
+    padding: 0 10px;
+    color: #000000;
+}
