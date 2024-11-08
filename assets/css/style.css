@@ -263,7 +263,7 @@ header .navbar.navbar-light .navbar-nav{
     display: block;
     font-family: latoMedium;
 	letter-spacing: 3px;
-    padding-bottom: 22px;
+    padding-bottom: 22px; 
 }
 .promotions h2{
     margin: 0 auto;
@@ -573,6 +573,7 @@ header .navbar.navbar-light .navbar-nav{
 	.banner h1{
 		width: 690px;
 	}
+
     .promotions .carousel-wrapper{
          padding: 0 50PX;
     }
@@ -634,6 +635,7 @@ header .navbar.navbar-light .navbar-nav{
     .promotions .carousel-wrapper{
         padding: 0 100px;
     }
+
     .promotions .promotion-carousel::before,.promotions .promotion-carousel::after{
         background: none;
     }
@@ -662,6 +664,9 @@ header .navbar.navbar-light .navbar-nav{
         padding-bottom: 30px;
         
     }
+.promotions h2{
+     width: auto;
+}
     .banner-carousel .carousel-caption{
         bottom: 7rem;
     }
