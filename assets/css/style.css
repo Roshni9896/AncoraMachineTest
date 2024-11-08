@@ -46,7 +46,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-color: #fffef2
+    background-color: #fffef2;
+	letter-spacing: 3px;
 
 }
 ol, ul {
@@ -103,7 +104,8 @@ button{
 
 .grey-border-btn:hover{
     background: #fff !important;
-    transition: 2s ease;
+    transition: 0.5s ease;
+	border: 1px solid #243230 !important;
     color: #243230 !important;
 }
 
@@ -113,7 +115,7 @@ header{
     position: absolute;
     width: 100%;
     z-index: 999;
-    padding-top: 68px;
+    padding-top: 90px;
     background: none;
     left: 0;
     top:0;
@@ -130,12 +132,14 @@ header .logo{
 }
 header .navbar{
     background-color: transparent !important;
+	border-bottom: 1px solid #FFFEF280;
+	padding-bottom: 0;
 }
 header .navbar.navbar-light .navbar-nav .nav-link{
     color: #fff;
     font-size: 18px;
-    margin: 0 30px ;
-    font-family: latoMedium;
+    margin: 0 18px ;
+    font-family: latoRegular;
     padding-bottom: 25px;
     border-bottom: 2px solid transparent;
 }
@@ -145,7 +149,7 @@ header .navbar.navbar-light .navbar-nav .nav-link:hover,header .navbar.navbar-li
 header .navbar.navbar-light .navbar-nav{
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #FFFEF280;
+    
 }
 
 
@@ -188,11 +192,13 @@ header .navbar.navbar-light .navbar-nav{
 .banner .banner-carousel .carousel-item button.right-corer-btn{
     padding: 28px 40px;
     position: absolute;
-    border-radius: 1px;
-    right: -103px;
-    top: 50%;
-    transform: translateY(-50%);
-    rotate: -90deg;
+    border-radius: 5px;
+    right: -63px;
+    top: 67%;
+	transform: translateY(-50%) rotate(-90deg);
+  /* Additional cross-browser prefixes, if needed */
+  -webkit-transform: translateY(-50%) rotate(-90deg); /* Safari */
+  -ms-transform: translateY(-50%) rotate(-90deg);     /* IE */
     border: 1px solid #FFFEF2;
 }
 .banner .banner-carousel .carousel-indicators{
@@ -231,6 +237,10 @@ header .navbar.navbar-light .navbar-nav{
     width: 101%;
     position: relative;
     z-index: 1;
+	width: 345px;
+}
+.about-us .about-image-wrapper figure img{
+	border-radius: 5px;
 }
 .about-us .about-image-wrapper figure:nth-child(1){
     left: 288px;
@@ -251,16 +261,41 @@ header .navbar.navbar-light .navbar-nav{
     line-height: 16px;
     color: #fff;
     display: block;
-    font-family: felixTitling;
+    font-family: latoMedium;
+	letter-spacing: 3px;
     padding-bottom: 22px;
 }
 .promotions h2{
+    margin: 0 auto;
     margin-bottom: 67px;
     color: #F0E5D6;
-    ;
+    width: 600px;
+    
 }
 .promotions .carousel-wrapper{
     position: relative;
+}
+.promotions .promotion-carousel::after{
+    content: "";
+    width: 162px;
+    height: 65px;
+    background-image: url(../images/caousel-side-bg.png);
+    top: -90px;
+    right: -182px;
+    position: absolute;
+    display: inline-block;
+
+}
+.promotions .promotion-carousel::before{
+    content: "";
+    width: 162px;
+    height: 65px;
+    background-image: url(../images/caousel-side-bg.png);
+    bottom: 58px;
+    left: -200px;
+    position: absolute;
+    display: inline-block;
+
 }
 .promotions .promotion-carousel .owl-item{
     position: relative;
@@ -281,6 +316,7 @@ header .navbar.navbar-light .navbar-nav{
 .promotions .promotion-carousel .owl-item .content-area .hover-area{
     display: none;
     transition: 0.5s ease;
+	padding-top: 28px;
 }
 .promotions .promotion-carousel .owl-item .content-area:hover .hover-area{
     display: block;
@@ -291,7 +327,7 @@ header .navbar.navbar-light .navbar-nav{
     font-size: 1.5rem;
     line-height: 1.75rem;
     color: #243230;
-    margin-bottom: 28px;
+    
 }
 .promotions .promotion-carousel .owl-item .content-area p{
     color: #636363;
@@ -323,11 +359,11 @@ header .navbar.navbar-light .navbar-nav{
     transform: translate(-50%);
 }
 .promotions .custom-nav button#prev{
-    left: -152px;
-    rotate: -180deg;
+    left: -105px;
+	
 }
 .promotions .custom-nav button#next{
-    right: -152px;
+    right: -190px;
 }
 
 
@@ -372,10 +408,13 @@ header .navbar.navbar-light .navbar-nav{
     font-size: 14PX;
     line-height: 25px;
     font-family: latoMedium;
-    display: inline-block;
+    display: block;
+}
+.events .event-cards .card-footer a:hover img{
+    transform: scale(1.1);
 }
 .events .event-cards .card-footer span{
-    width: 200px;
+    width: 230px;
     display: inline-block;
 }
 .events .event-cards .card-footer IMG{
@@ -398,7 +437,7 @@ header .navbar.navbar-light .navbar-nav{
 }
 .gallery img {
     width: 100%;
-    margin: 10px;
+    margin: 3px 10px;
     border-radius: 5px;
     transition: transform 0.3s;
 }
@@ -429,14 +468,13 @@ header .navbar.navbar-light .navbar-nav{
     background-color: none;
     border-radius: 0;
 }
-.gallery-items .col-md-3{
+.gallery-items .col-4{
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 5px;
 }
 
-
 .footer{
-    
     padding-top: 72px;
     color:#243230 ;
 }
@@ -457,7 +495,7 @@ header .navbar.navbar-light .navbar-nav{
 .footer .location-sec{
     padding: 33px 0;
 }
-.footer .locxation-sec h3{
+.footer .location-sec h3{
     font-size: 20px;
     font-family: latoMed;
     padding-bottom: 25px;
@@ -510,4 +548,526 @@ header .navbar.navbar-light .navbar-nav{
 .sub-footer .footer-menu a{
     padding: 0 10px;
     color: #000000;
+}
+
+
+
+@media (max-width: 1600px){
+	h1{
+		font-size: 2.7rem;
+		line-height: 3.2rem;
+	}
+	header{
+		padding-top: 50px;
+	}
+	header .logo{
+		font-size: 65px;
+		margin-bottom: 50px;
+	}
+    .promotions .custom-nav button img{
+		width: 65px;
+	}
+    .promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4{
+		font-size: 1.3rem;
+	}
+	.banner h1{
+		width: 690px;
+	}
+    .promotions .carousel-wrapper{
+         padding: 0 50PX;
+    }
+    .promotions .custom-nav button#prev {
+        left: -10px;
+    }.promotions .custom-nav button#next {
+        right: -70px;
+    }
+}
+@media (max-width: 1400px){
+    h1{
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+    p {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+    }
+
+    header {
+        padding-top: 35px;
+    }
+    header .logo {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    header .navbar.navbar-light .navbar-nav .nav-link{
+        font-size: 16px;
+        margin: 0 13px;
+    }
+    .banner h1{
+        margin-bottom: 35px;
+    }
+    .banner-carousel .carousel-caption{
+        bottom: 8.35rem;
+    }
+    .banner .banner-carousel .carousel-item button.right-corer-btn{
+        padding: 20px 30px;
+        right: -61px;
+    }
+    .about-us .about-image-wrapper figure{
+        width: 250px;
+    }
+    .about-us .about-image-wrapper {
+        position: relative;
+        padding-top: 230px;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1){
+        left: 140px;
+    }
+    .about-us .about-image-wrapper{
+        padding-left: 40px;
+        padding-top: 200px;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1){
+        left: 190px;
+        bottom: 140px;
+    }
+    .promotions .carousel-wrapper{
+        padding: 0 100px;
+    }
+    .promotions .promotion-carousel::before,.promotions .promotion-carousel::after{
+        background: none;
+    }
+    .promotions .custom-nav button img{
+        width: 55px;
+    }
+    .promotions .custom-nav button#prev {
+        left: 40px;
+    }
+    .promotions .custom-nav button#next{
+        right: -10px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4 {
+        font-size: 1.2rem;
+    }
+    .promotions .promotion-carousel .owl-item .content-area{
+        padding: 25px;
+        bottom: -55px;
+    }
+    .footer p{
+        width: auto;
+    }
+}
+@media (max-width: 1200px) {
+    .banner .banner-carousel .carousel-indicators{
+        padding-bottom: 30px;
+        
+    }
+    .banner-carousel .carousel-caption{
+        bottom: 7rem;
+    }
+    .about-us p {
+        width: auto;
+    }
+    .about-us .about-image-wrapper figure {
+        width: 210px;
+    }
+    .about-us .about-image-wrapper {
+        padding-left: 50px;
+        padding-top: 154px;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1) {
+        left: 172px;
+        bottom: 83px;
+    }
+    .about-us{
+        padding: 90px;
+    }
+    .promotions .custom-nav button img{
+        width: 45px;
+    }
+    .promotions .custom-nav button#next {
+        right: -3px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area{
+        width: auto;
+    }
+    .promotions .promotion-carousel .owl-item .content-area{
+        width: 290px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4 {
+        font-size: 1rem;
+    }
+    .promotions .promotion-carousel::before,.promotions .promotion-carousel::after{
+        background: none;
+    }
+    .events {
+        padding: 40px;
+    }
+    .events .event-cards .card-footer span{
+        width: 140PX;
+        font-size: 12PX;
+        line-height: 22px;
+    }
+    .events .event-cards .card-footer IMG{
+        width: 37px;
+    }
+    .gallery .nav-tabs li{
+        padding: 10px;
+
+    }
+    .gallery .nav-tabs{
+        justify-content: center;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+    .footer .footer-logo {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    .footer form button{
+        padding: 19px 45px;
+    }
+    .footer button {
+        padding: 17px 38px;
+    }
+    .sub-footer .footer-menu a {
+        padding: 7px;
+    }
+    .sub-footer .footer-menu{
+        flex-wrap: wrap;
+    }
+    .footer .social-media-list {
+        display: flex;
+        padding: 50px 20px;
+    }
+    .gallery img{
+        margin: 0;
+    }
+}
+@media(max-width: 991px){
+    body{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .about-us .about-image-wrapper figure{
+        padding: 13pz 28px;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .events .event-cards .card-footer span{
+        width: 207px;
+    }
+    .events .event-cards .card-body, .events .event-cards .card-footer {
+        padding: 18px 21px;
+    }
+    header{
+    background-color: #fffef2;
+    }
+    header .logo {
+        position: absolute;
+        color: #212529;
+        font-size: 30px;
+    }
+    header {
+        padding: 20px 0 40px 30px;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    header .navbar.navbar-light .navbar-nav .nav-link{
+        color: #212529;
+    }
+    .navbar-light .navbar-toggler{
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+    header .navbar.navbar-light .navbar-nav .nav-link:hover, header .navbar.navbar-light .navbar-nav .active{
+        border-bottom: none;
+    }
+    h1 {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+    .banner h1{
+        width: 595px;
+    }
+    .banner-carousel .carousel-caption {
+        bottom: 3rem;
+    }
+    .banner .banner-carousel .carousel-item button{
+        padding: 12px 25px;
+     font-size: 13px;
+    }
+    .banner .banner-carousel .carousel-indicators {
+        padding-bottom: 10px;
+    }
+    .banner .banner-carousel .carousel-item button.right-corer-btn {
+        padding: 13px 20px;
+        right: -48px;
+    }
+    .navbar-collapse{
+        padding-top: 50px;
+    }
+    
+    header .navbar.navbar-light .navbar-nav .nav-link{
+        padding: 15px;
+    }
+    header .navbar.navbar-light .navbar-nav .nav-link:hover, header .navbar.navbar-light .navbar-nav .active{
+        background: #242500;
+        color: #fff;
+        
+        border-radius: 10px;
+    }
+    .about-us {
+        padding: 55px 0;
+    }
+    .about-us .about-image-wrapper figure{
+        WIDTH: 152PX;
+    }
+    .promotions .carousel-wrapper {
+        padding: 0 40px;
+    }
+    .promotions .custom-nav button img {
+        width: 30px;
+    }
+    
+    .promotions .custom-nav button#prev {
+        left: 3px;
+    }
+    .promotions .custom-nav button#next {
+        right: -26px;
+    }
+       
+     .promotions .promotion-carousel .owl-item .content-area {
+        width: 236px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4 {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .promotions .promotion-carousel .owl-item .content-area{
+        padding: 20px;
+        bottom: -40px;
+    }
+    .promotions{
+        padding: 53px 0;
+    }
+    .promotions .promotion-carousel .owl-item .content-area a{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .footer button {
+        padding: 14px 23px;
+    }
+    .footer form input{
+        font-size: 14px;
+        padding: 14px 25px;
+    }
+    .footer form button {
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+    .footer .social-media-list li {
+        width: 35px;
+        height: 35px;
+    }
+    .footer .social-media-list li img{
+        width: 100%;
+    }
+        
+    .footer .social-media-list li {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+    }
+
+}
+@media (max-width: 767px) {
+    body{
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+    }
+    button{
+        padding: 6px 39px;
+    }
+    .banner-carousel .carousel-caption{
+        bottom: 1.5rem;
+        display: block !important;
+    }
+    .banner h1 {
+        width: 400px;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+    .banner h1 {
+        margin-bottom: 15px;
+    }
+    .banner .banner-carousel .carousel-indicators{
+        display: none;
+    }
+    .banner .banner-carousel .carousel-item button{
+        padding: 4px 25px;
+    }
+    .banner .banner-carousel .carousel-item button{
+        padding: 5px 20px;
+    }
+    .about-us .about-image-wrapper figure {
+        WIDTH: 206PX;
+    }
+    .about-us .about-image-wrapper{
+        padding-left: 75px;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1) {
+        left: 210px;
+        bottom: 90px;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1) {
+        left: 210px;
+        bottom: 90px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area {
+        width: 340px;
+    }
+    .promotions {
+        padding: 53px 0 0;
+    }
+    .events .event-cards .card{
+        margin-bottom: 20px;
+    }
+    .events .event-cards {
+        padding-bottom: 13px;
+    }
+    .gallery {
+        padding: 45px 0;
+    }
+    .gallery .mt-5{
+        margin-top: 1rem;
+    }
+    .gallery .nav-tabs li {
+        padding:0  8px;
+    }
+    .footer .footer-logo {
+        font-size: 45px;
+        margin-bottom: 35px;
+    }
+    .footer{
+        padding: 60px;
+    }
+    .footer button {
+        width: 200px;
+        padding: 9px 23px;
+        margin: 0 auto;
+        display: block;
+    }
+    .footer form button{
+        padding: 8px 10px;
+    }
+    .footer form input {
+      
+        padding: 8px 25px;
+    }
+    .footer .social-media-list{
+        justify-content: center;
+    }
+    .footer {
+        padding: 40px 0 20px;
+    }
+}
+@media (max-width:575px) {
+    body{
+        font-size: 0.6rem;
+        line-height: 1.4rem;
+    }
+    header .navbar.navbar-light .navbar-nav .nav-link {
+        padding: 10px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .about-us .about-image-wrapper {
+        padding-left: 90px;
+    }
+    .about-us .about-image-wrapper figure {
+        WIDTH: 115PX;
+    }
+    .about-us .about-image-wrapper figure:nth-child(1) {
+        left: 161px;
+        bottom: 51px;
+    }
+    .about-us .about-image-wrapper {
+        padding-top: 95px;
+    }
+    .promotions .custom-nav{
+        display: none;
+    }
+    .promotions .carousel-wrapper{
+        padding: 0;
+    }
+    .promotions .promotion-carousel .owl-item .content-area {
+        width: 205px;
+    }
+    .promotions .promotion-carousel .owl-item .content-area h4, .events .card-body h4 {
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
+    .banner-carousel .carousel-caption{
+        display: none !important;
+    }
+    .banner .banner-carousel .carousel-item button.right-corer-btn{
+        display: none;
+    }
+    .banner .banner-carousel .carousel-indicators{
+        display: flex;
+        padding-bottom: 0;
+    }
+    .banner .banner-carousel .carousel-indicators button{
+        width: 8PX;
+        height: 8PX;
+        margin-right: 8px;
+    }
+    .about-us {
+        padding: 35px 0;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .promotions .promotion-carousel .owl-dots{
+        padding-bottom: 15px;
+    }
+    .promotions .promotion-carousel button.owl-dot {
+        width: 8px;
+        border-radius: 5px;
+        height: 8px;
+        border: 1px solid #fff !important;
+        margin-left: 8px;
+    }
+    .promotions .promotion-carousel button.owl-dot.active{
+        background: #fff;
+    }
+    .footer form button {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .sub-footer .footer-menu{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .events .event-cards .card-footer span {
+        width: 140px;
+    }
+    .events .event-cards .card-footer span {
+      
+        font-size: 10PX;
+        line-height: 19px;
+    }
 }

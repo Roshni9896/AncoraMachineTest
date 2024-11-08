@@ -77,7 +77,10 @@
                     <div class="col-md-6">
                         <h2>ABOUT US</h2>
                         <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living at our restaurant. With each dish, we celebrate the vibrant flavors and wholesome ingredients that define this rich culinary tradition.</p>
-                        <button class="grey-border-btn">READ MORE</button>
+                        <div id="more-content" style="display: none;">
+                            <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living at our restaurant. With each dish, we celebrate the vibrant flavors and wholesome ingredients that define this rich culinary tradition.</p>
+                        </div>
+                        <button class="grey-border-btn" id="read-more-btn">READ MORE</button>
                     </div>
                     <div class="col-md-6">
                         <div class="about-image-wrapper">
@@ -164,21 +167,20 @@
                     </div> 
                     <div class="custom-nav">
                         <button id="prev" class="nav-arrow">
-                            <img src="./assets/images/navigation-arrow.png" alt="Previous">
+                            <img src="./assets/images/navigation-arrow-left.png" alt="Previous">
                         </button>
                         <button id="next" class="nav-arrow">
                             <img src="./assets/images/navigation-arrow.png" alt="Next">
                         </button>
                     </div>    
-                </div> 
+				</div>
          </section>
 
          <!-------------------       EVENTS    ------------------->
          <section class="events" id="events-block">
-            <div class="container">
                 <h2>EVENTS</h2>
                 <div class="row event-cards">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
                             <img class="card-img-top" src="./assets/images/event-img-1.png" alt="event image 1">
                             <div class="card-body">
@@ -187,14 +189,15 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <div class="card-footer">
-                               <a href="#">RESERVE YOUR SPOT FOR AN EXCLUSIVE MEAL
-                                <img src="./assets/images/navigation-arrow.png">
+                               <a href="#">
+								   <span>RESERVE YOUR SPOT FOR AN EXCLUSIVE MEAL</span>
+                                	<img src="./assets/images/navigation-arrow.png">
                                </a>
                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
                             <img class="card-img-top" src="./assets/images/event-img-2.png" alt="event image 2">
                             <div class="card-body">
@@ -210,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
                             <img class="card-img-top" src="./assets/images/event-img-2.png" alt="event image 3">
                             <div class="card-body">
@@ -229,7 +232,6 @@
                    
                 </div>
                 <button class="grey-border-btn">VIEW MORE</button>
-            </div>
         </section>
 
         <!-------------------       Gallery    ------------------->
@@ -267,28 +269,28 @@
                 <!-- Gallery Content -->
                 <div class="gallery-items mt-4 row" id="galleryContent">
                     <!-- Each image has a category data attribute -->
-                    <div class="col-md-3" data-category="ancora-drunch">
+                    <div class="col-lg-3 col-4" data-category="ancora-drunch">
                         <img src="./assets/images/gallery-img1.jpg" alt="Ancora Drunch" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="ancora-drunch">
+                    <div class="col-lg-3 col-4" data-category="ancora-drunch">
                         <img src="./assets/images/gallery-img2.jpg" alt="Ancora Drunch" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="ancora-interior">
+                    <div class="col-lg-3 col-4" data-category="ancora-interior">
                         <img src="./assets/images/gallery-img3.jpg" alt="Ancora Interior" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="ancora-interior">
+                    <div class="col-lg-3 col-4" data-category="ancora-interior">
                         <img src="./assets/images/gallery-img4.jpg" alt="Ancora Interior" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="iftar">
+                    <div class="col-lg-3 col-4" data-category="iftar">
                         <img src="./assets/images/gallery-img3.jpg" alt="Iftar" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="iftar">
+                    <div class="col-lg-3 col-4" data-category="iftar">
                         <img src="./assets/images/gallery-img4.jpg" alt="Iftar" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="shisha">
+                    <div class="col-lg-3 col-4" data-category="shisha">
                         <img src="./assets/images/gallery-img5.jpg" alt="Shisha" class="img-fluid">
                     </div>
-                    <div class="col-md-3" data-category="shisha">
+                    <div class="col-lg-3 col-4" data-category="shisha">
                         <img src="./assets/images/gallery-img6.jpg" alt="Shisha" class="img-fluid">
                     </div>
                     <!-- Add more images with different categories as needed -->
